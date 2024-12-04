@@ -1,7 +1,7 @@
 from pydantic import (Field, field_validator, model_validator)
-from enums.project import AccessLevel
+from app.enums.project import AccessLevel
 
-from schemas.base import MyBaseModel
+from app.schemas.base import MyBaseModel
 
 
 class CreateProjectCreate(MyBaseModel):

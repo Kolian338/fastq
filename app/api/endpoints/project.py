@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Body
 
-from schemas.project import (CreateProjectCreate)
+from app.schemas.project import (CreateProjectCreate)
 
 project_router = APIRouter()
 
@@ -9,7 +9,7 @@ project_router = APIRouter()
     '/'
 )
 async def get_all_projects():
-    return {'project_name': 'Project First'}
+    return {'project_name': 'Need to do this'}
 
 
 @project_router.post(
